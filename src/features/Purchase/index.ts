@@ -1,0 +1,1 @@
+export { default as PurchaseFeature } from './Purchase'
