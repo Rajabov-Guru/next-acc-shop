@@ -1,3 +1,3 @@
-const getBackendURL = () => (process.env.MAIN_API_URL ?? '');
+const getBackendURL = () => (process.env["NEXT_PUBLIC_MAIN_API_URL"] ?? '');
 
 export default getBackendURL;
