@@ -1,5 +1,6 @@
+"use client"
 import { Button } from '@/shadcdn/ui/button'
-import {useRouter} from "next/router";
+import { useRouter } from 'next/navigation'
 
 export default function NotFoundError() {
     const router = useRouter()
