@@ -14,8 +14,8 @@ import useStores from "@/lib/hooks/useStores";
 import useSubmit from "@/lib/hooks/useSubmit";
 import { observer } from "mobx-react-lite";
 import {useState} from "react";
-import {createOrder} from "@/features/Purchase/api/createOrder";
 import { LoadingView } from "@/components/LoadingView";
+import { createOrder } from "@/api/order";
 
 const Purchase = () => {
     const [dialogOpened, setDialogOpened] = useState(false)

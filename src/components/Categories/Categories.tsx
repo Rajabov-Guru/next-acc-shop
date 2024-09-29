@@ -1,6 +1,6 @@
+import getCategories from "@/api/categories";
 import CategoryItem from "@/components/Categories/CategoryItem";
 import {routes} from "@/lib/consts/routes";
-import getCategories from "./api/getCategories";
 
 const Categories = async () => {
     const categories = await getCategories()

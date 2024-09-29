@@ -8,8 +8,8 @@ export const routes = {
     logs: '/logs',
 
     myOrders: "/my-orders",
-    product: "/products/:productId",
-    categoryProducts: "/category/:categoryId/products",
+    product: "/products.ts/:productId",
+    categoryProducts: "/category/:categoryId",
 
     basket: "/basket"
 } as const;
