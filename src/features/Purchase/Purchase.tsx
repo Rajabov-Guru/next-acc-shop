@@ -1,3 +1,4 @@
+"use client";
 import {Button} from "@/shadcdn/ui/button";
 import {
     Dialog,

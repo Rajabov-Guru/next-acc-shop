@@ -6,4 +6,5 @@ export type RequestFuncParams = {
   body?: BodyInit;
   searchParams?: Record<string, unknown>;
   signal?: AbortSignal;
+  cache?: RequestCache
 };

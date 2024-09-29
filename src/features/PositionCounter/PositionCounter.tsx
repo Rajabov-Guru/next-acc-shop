@@ -1,3 +1,4 @@
+"use client";
 import { observer } from "mobx-react-lite";
 import { CirclePlus, CircleMinus} from "lucide-react";
 import useStores from "@/lib/hooks/useStores";

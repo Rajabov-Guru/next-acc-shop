@@ -1,3 +1,5 @@
+"use client";
+
 import {Button} from "@/shadcdn/ui/button";
 import { observer } from "mobx-react-lite";
 import {PositionCounterFeature} from "@/features/PositionCounter";

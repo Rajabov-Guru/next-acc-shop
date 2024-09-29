@@ -23,6 +23,7 @@ const makeRequest = async ({
   body,
   searchParams,
   signal,
+  cache
 }: RequestFuncParams) => {
   // const { tokens } = userStore;
   const requestHeaders: HeadersInit = {};
@@ -51,7 +52,8 @@ const makeRequest = async ({
       headers: requestHeaders,
       body,
       signal,
-      credentials: 'include'
+      credentials: 'include',
+      cache
     },
   );
 };

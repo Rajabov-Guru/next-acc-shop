@@ -6,6 +6,7 @@ export default async function getProducts(categoryId?:string){
     const products = await request<Product[]>({
         path,
         method: 'GET',
+        cache: 'no-store'
     });
 
     return products || []
