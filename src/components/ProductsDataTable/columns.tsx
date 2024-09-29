@@ -1,3 +1,4 @@
+"use client";
 import { ColumnDef } from "@tanstack/react-table";
 import { productColumnIdMap } from "./productColumnIdMap";
 import { routes } from "@/lib/consts/routes";
