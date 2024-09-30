@@ -1,4 +1,4 @@
-import getProducts from "@/api/products";
+import {getProducts} from "@/api/products";
 import { productsColumns } from "@/components/ProductsDataTable/columns";
 import ProductsDataTable from "@/components/ProductsDataTable/data-table";
 

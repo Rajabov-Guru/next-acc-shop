@@ -8,7 +8,7 @@ export const routes = {
     logs: '/logs',
 
     myOrders: "/my-orders",
-    product: "/products.ts/:productId",
+    product: "/products/:productId",
     categoryProducts: "/category/:categoryId",
 
     basket: "/basket"

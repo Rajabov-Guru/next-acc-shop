@@ -1,6 +1,6 @@
 import request from "@/lib/funcs/request";
 
-export default async function getProducts(categoryId?:string){
+export async function getProducts(categoryId?:string){
     const path = categoryId?`/products/category/${categoryId}`:'/products/all'
 
     const products = await request<Product[]>({
@@ -9,4 +9,13 @@ export default async function getProducts(categoryId?:string){
     });
 
     return products || []
+}
+
+export async function getProduct(productId: string){
+    const path = `/products/${productId}`
+
+    return await request<ProductWithDetails>({
+        path,
+        method: 'GET'
+    })
 }

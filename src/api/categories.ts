@@ -1,6 +1,6 @@
 import request from "@/lib/funcs/request";
 
-export default async function getCategories(parentCategoryId?: string){
+export async function getCategories(parentCategoryId?: string){
     const searchParams = !parentCategoryId?{}:{
         categoryID: parentCategoryId
     }

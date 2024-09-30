@@ -1,4 +1,4 @@
-import getCategories from "@/api/categories";
+import {getCategories} from "@/api/categories";
 import CategoryCard from "./CategoryCard";
 
 

@@ -1,4 +1,4 @@
-import getCategories from "@/api/categories";
+import {getCategories} from "@/api/categories";
 import CategoryItem from "@/components/Categories/CategoryItem";
 import {routes} from "@/lib/consts/routes";
 
