@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { FloatingBasket } from "@/components/FloatingBasket";
 import { Header } from "@/components/Header";
@@ -7,16 +6,6 @@ import { Footer } from "@/components/Footer";
 import { StoreWrapper } from "@/lib/stores/provider";
 import { SideBar } from "@/widgets/SideBar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Fresh Accounts - Все товары",
@@ -31,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-full h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full h-full`}
+        className={`antialiased w-full h-full`}
       >
         <StoreWrapper>
           <div className="max-w-[1200px] my-0 mx-auto py-[20px] xs:py-[60px]">
