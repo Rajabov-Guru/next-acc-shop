@@ -11,7 +11,7 @@ export async function generateMetadata({params}: Props) {
     if(!product) return {};
 
     return {
-        title: `Fresh Accounts - [${product.name}]`,
+        title: `Fresh Accounts - ${product.name}`,
         description: product.description
     }
 }

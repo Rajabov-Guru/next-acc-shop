@@ -6,16 +6,18 @@ import {routes} from "@/lib/consts/routes";
 import useStores from "@/lib/hooks/useStores";
 import Link from "next/link";
 import {useEffect} from "react";
+import {usePathname} from "next/navigation";
 
 const FloatingBasket = () => {
     const {mainStore} = useStores();
+    const pathname = usePathname()
 
 
     useEffect(() => {
         mainStore.recoveryBasket()
     }, []);
 
-    if(!mainStore.basketItems.length || window.location.pathname === routes.basket) {
+    if(!mainStore.basketItems.length || pathname === routes.basket) {
         return null;
     }
 
